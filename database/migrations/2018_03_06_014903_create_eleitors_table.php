@@ -16,7 +16,7 @@ class CreateEleitorsTable extends Migration
         Schema::create('eleitors', function (Blueprint $table) {
             $table->increments('id');
             $table->bigInteger('cidadao_id');
-            $table->int('intencao_voto');
+            $table->integer('intencao_voto');
             $table->string('observacao');
             $table->boolean('whatsapp');
             $table->string('facebook');

@@ -24,9 +24,9 @@ class CreateCidadaosTable extends Migration
             $table->string('email2');
             $table->date('data_nascimento');
             $table->bigInteger('endereco_id');
-            $table->enum('sexo', ['M', 'F']);
-            $table->enum('estado_civil', ['solteiro', 'casado', 'separado', 'divorciado', 'viuvo']);
-
+            $table->enum('sexo', ['M', 'F', 'O']);
+            $table->enum('estado_civil', ['SOLTEIRO', 'CASADO', 'SEPARADO', 'DIVORCIADO', 'VIUVO', 'UNIAO_ESTAVEL']);
+            $table->string('religiao');
             $table->timestamps();
         });
     }
